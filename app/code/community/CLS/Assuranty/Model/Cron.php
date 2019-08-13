@@ -110,7 +110,7 @@ class CLS_Assuranty_Model_Cron
             ->getSelect()
             ->where('sku IN (?)', $warrantySkus)
             ->group('main_table.order_id');
-        
+
         if ($orderItemsCollection->getSize()) {
             $assurantyOrdersFile = Mage::getBaseDir() . DS . 'var' . DS . 'export' . DS . self::ORDERS_LOCAL_CSV_NAME;
             @unlink($assurantyOrdersFile);
@@ -137,6 +137,7 @@ class CLS_Assuranty_Model_Cron
     
     protected function _exportOrderItemAndSiblings($orderItem, $handle) 
     {
+        /** @var Mage_Sales_Model_Order $order */
         $order = $orderItem->getOrder();
         $orderAddress = $order->getAddressesCollection()->getFirstItem();
         
@@ -152,7 +153,7 @@ class CLS_Assuranty_Model_Cron
                 'customer_city' => $orderAddress->getCity(),
                 'customer_state' => $orderAddress->getRegion(),
                 'customer_zip_code' => $orderAddress->getPostcode(),
-                'customer_email' => $order->getEmail(),
+                'customer_email' => $order->getCustomerEmail(),
                 'customer_telephone' => $orderAddress->getTelephone(),
                 'qty_backordered' => $orderItem->getQtyBackordered(),
                 'qty_canceled' => $orderItem->getQtyCanceled(),

@@ -1,3 +1,7 @@
+CLS_Assuranty 0.1.5 (2015-09-07)
+=======================================
+Fixed export of order email address
+
 CLS_Assuranty 0.1.4 (2015-05-29)
 =======================================
 Change to product list
