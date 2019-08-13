@@ -30,7 +30,7 @@
 <config>
     <modules>
         <CLS_Assuranty>
-            <version>0.1.3</version>
+            <version>0.1.4</version>
         </CLS_Assuranty>
     </modules>
     <global>

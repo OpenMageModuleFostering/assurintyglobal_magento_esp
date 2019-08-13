@@ -4,11 +4,11 @@ Item,Description,Department,SKU,Retailer Cost,RETAIL PRICE
 1 Year Warranty + Accidental Damage Coverage,Full Replacement under $250 wADH,All except cell phones,RPA1U250,27.99,39.99
 1 Year Warranty + Accidental Damage Coverage,Full Replacement under $400 wADH,All except cell phones,RPA1U400,34.99,49.99
 1 Year Warranty + Accidental Damage Coverage,Full Replacement under $500 wADH,All except cell phones,RPA1U500,41.99,59.99
-Replacent Plan - extends 1 year after mfr warranty,Replacent Plan under $50 - 1 year EXT,All except cell phones,RPL1U50,2.79,3.99
-Replacent Plan - extends 1 year after mfr warranty,Replacent Plan under $100 - 1 year EXT,All except cell phones,RPL1U100,5.59,7.99
-Replacent Plan - extends 1 year after mfr warranty,Replacent Plan under $250 - 1 year EXT,All except cell phones,RPL1U250,13.99,19.99
-Replacent Plan - extends 1 year after mfr warranty,Replacent Plan under $400 - 1 year EXT,All except cell phones,RPL1U400,22.39,31.99
-Replacent Plan - extends 1 year after mfr warranty,Replacent Plan under $500 - 1 year EXT,All except cell phones,RPL1U500,27.99,39.99
+Replacement Plan - extends 1 year after mfr warranty,Replacement Plan under $50 - 1 year EXT,All except cell phones,RPL1U50,2.79,3.99
+Replacement Plan - extends 1 year after mfr warranty,Replacement Plan under $100 - 1 year EXT,All except cell phones,RPL1U100,5.59,7.99
+Replacement Plan - extends 1 year after mfr warranty,Replacement Plan under $250 - 1 year EXT,All except cell phones,RPL1U250,13.99,19.99
+Replacement Plan - extends 1 year after mfr warranty,Replacement Plan under $400 - 1 year EXT,All except cell phones,RPL1U400,22.39,31.99
+Replacement Plan - extends 1 year after mfr warranty,Replacement Plan under $500 - 1 year EXT,All except cell phones,RPL1U500,27.99,39.99
 2 Year Warranty + Power Surge Protection,Small Office Equipment under $250,Small Office,SMO2U250,23.09.2015,32.99
 2 Year Warranty + Power Surge Protection,Small Office Equipment under $500,Small Office,SMO2U500,34.99,49.99
 2 Year Warranty + Power Surge Protection,Small Office Equipment under $1000,Small Office,SMO2U1K,62.99,89.99
@@ -54,11 +54,11 @@ Replacent Plan - extends 1 year after mfr warranty,Replacent Plan under $500 - 1
 2 Year Warranty + Accidental Damage Coverage,Full Replacement under $250 wADH,All except cell phones,RPA2U250,48.99,69.99
 2 Year Warranty + Accidental Damage Coverage,Full Replacement under $400 wADH,All except cell phones,RPA2U400,62.99,89.99
 2 Year Warranty + Accidental Damage Coverage,Full Replacement under $500 wADH,All except cell phones,RPA2U500,76.99,109.99
-Replacent Plan - extends 2 year after mfr warranty,Replacent Plan under $50 - 2 year EXT,All except cell phones,RPL2U50,5.59,7.99
-Replacent Plan - extends 1 year after mfr warranty,Replacent Plan under $100 - 2 year EXT,All except cell phones,RPL2U100,11.19,15.99
-Replacent Plan - extends 1 year after mfr warranty,Replacent Plan under $250 - 2 year EXT,All except cell phones,RPL2U250,27.99,39.99
-Replacent Plan - extends 1 year after mfr warranty,Replacent Plan under $400 - 2 year EXT,All except cell phones,RPL2U400,48.99,69.99
-Replacent Plan - extends 1 year after mfr warranty,Replacent Plan under $500 - 2 year EXT,All except cell phones,RPL2U500,55.99,79.99
+Replacement Plan - extends 2 year after mfr warranty,Replacement Plan under $50 - 2 year EXT,All except cell phones,RPL2U50,5.59,7.99
+Replacement Plan - extends 1 year after mfr warranty,Replacement Plan under $100 - 2 year EXT,All except cell phones,RPL2U100,11.19,15.99
+Replacement Plan - extends 1 year after mfr warranty,Replacement Plan under $250 - 2 year EXT,All except cell phones,RPL2U250,27.99,39.99
+Replacement Plan - extends 1 year after mfr warranty,Replacement Plan under $400 - 2 year EXT,All except cell phones,RPL2U400,48.99,69.99
+Replacement Plan - extends 1 year after mfr warranty,Replacement Plan under $500 - 2 year EXT,All except cell phones,RPL2U500,55.99,79.99
 3 Year Warranty + Power Surge Protection,Game Consoles under $500,Gaming,CGC3U500,48.99,69.99
 3 Year Warranty + Power Surge Protection,Game Consoles under $1000,Gaming,CGC3U1000,97.99,139.98
 3 Year Warranty + Drops & Spills Coverage,Cell Phones Under $250,Cell,CEA3U250,34.99,49.99
