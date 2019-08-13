@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Classy Llama
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email to us at
+ * support+paypal@classyllama.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this module
+ * to newer versions in the future. If you require customizations of this
+ * module for your needs, please write us at sales@classyllama.com.
+ *
+ * To report bugs or issues with this module, please email support+paypal@classyllama.com.
+ *
+ * @category   CLS
+ * @package    Assuranty
+ * @copyright  Copyright (c) 2014 Classy Llama Studios, LLC (http://www.classyllama.com)
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
+<config>
+    <tabs>
+        <cls_assuranty translate="label" module="cls_assuranty">
+            <label>ASSURINTYglobal</label>
+            <sort_order>150</sort_order>
+        </cls_assuranty>
+    </tabs>
+    <sections>
+        <cls_assuranty>
+            <label>ASSURINTYglobal</label>
+            <tab>cls_assuranty</tab>
+            <sort_order>100</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general>
+                    <label>General</label>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled>
+                            <label>Enabled</label>
+                            <sort_order>100</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_Yesno</source_model>
+                        </enabled>
+                        <retailer_name>
+                            <label>Retailer name</label>
+                            <sort_order>150</sort_order>
+                            <show_in_default>0</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <frontend_type>text</frontend_type>
+                        </retailer_name>
+                        <sign_up>
+                            <label>Sign up template</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_email_template</source_model>
+                            <sort_order>200</sort_order>
+                            <show_in_default>0</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </sign_up>
+                    </fields>
+                </general>
+            </groups>
+        </cls_assuranty>
+    </sections>
+</config>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category   CLS
+ * @package    Assuranty
+ * @copyright  Copyright (c) 2013 Classy Llama Studios, LLC (http://www.classyllama.com)
+ */
+-->
+<layout version="0.1.0">
+    <checkout_cart_index>
+        <reference name="head">
+            <block type="cls_assuranty/head" template="cls_assuranty/head.phtml" name="cls_assuranty.head" />
+        </reference>
+    </checkout_cart_index>
+</layout>

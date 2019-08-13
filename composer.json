@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/ASSURINTYglobal_Magento_ESP",
+    "type": "magento-module",
+    "license": "Open-Software-License-(OSL)",
+    "homepage": "",
+    "description": "Seamlessly offer extended warranty for sale in customer cart. Displays as an optional item in the cart. ",
+    "authors": [
+    {
+        "name": "ASSURINTYglobal",
+        "email": "magento@ASSURINTYglobal.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

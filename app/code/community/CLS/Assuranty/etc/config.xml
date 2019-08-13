@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Classy Llama
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email to us at
+ * support+paypal@classyllama.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this module
+ * to newer versions in the future. If you require customizations of this
+ * module for your needs, please write us at sales@classyllama.com.
+ *
+ * To report bugs or issues with this module, please email support+paypal@classyllama.com.
+ *
+ * @category   CLS
+ * @package    Assuranty
+ * @copyright  Copyright (c) 2014 Classy Llama Studios, LLC (http://www.classyllama.com)
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
+<config>
+    <modules>
+        <CLS_Assuranty>
+            <version>0.1.3</version>
+        </CLS_Assuranty>
+    </modules>
+    <global>
+        <blocks>
+            <cls_assuranty>
+                <class>CLS_Assuranty_Block</class>
+            </cls_assuranty>
+        </blocks>
+        <helpers>
+            <cls_assuranty>
+                <class>CLS_Assuranty_Helper</class>
+            </cls_assuranty>
+        </helpers>
+        <models>
+            <cls_assuranty>
+                <class>CLS_Assuranty_Model</class>
+            </cls_assuranty>
+        </models>
+        <events>
+            <controller_action_predispatch_checkout_cart_add>
+                <observers>
+                    <cls_assuranty_add_to_cart>
+                        <class>cls_assuranty/observer</class>
+                        <method>productAddBySku</method>
+                    </cls_assuranty_add_to_cart>
+                </observers>
+            </controller_action_predispatch_checkout_cart_add>
+        </events>
+        <template>
+            <email>
+                <cls_assuranty_general_sign_up translate="label" module="cls_assuranty">
+                    <label>Sign up email template</label>
+                    <file>signup.html</file>
+                    <type>html</type>
+                </cls_assuranty_general_sign_up>
+            </email>
+        </template>
+    </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <use>admin</use>
+                <args>
+                    <modules>
+                        <cls_assuranty_admin before="Mage_Adminhtml">CLS_Assuranty</cls_assuranty_admin>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <frontend>
+        <layout>
+            <updates>
+                <cls_assuranty>
+                    <file>cls_assuranty.xml</file>
+                </cls_assuranty>
+            </updates>
+        </layout>
+    </frontend>
+    <crontab>
+        <jobs>            
+            <cls_assuranty_ftp_orders_export>
+                <schedule>
+                    <cron_expr>20 2 * * 1</cron_expr>
+                </schedule>
+                <run>
+                    <model>cls_assuranty/cron::ftpOrdersExport</model>
+                </run>
+            </cls_assuranty_ftp_orders_export>
+            <cls_assuranty_notifications>
+                <schedule>
+                    <cron_expr>0 0 * * *</cron_expr>
+                </schedule>
+                <run>
+                    <model>cls_assuranty/feed::observe</model>
+                </run>
+            </cls_assuranty_notifications>
+        </jobs>
+    </crontab>
+    <default>
+        <cls_assuranty>
+            <general>
+                <enabled>1</enabled>
+                <sign_up>cls_assuranty_general_sign_up</sign_up>
+            </general>
+        </cls_assuranty>
+    </default>
+</config>
