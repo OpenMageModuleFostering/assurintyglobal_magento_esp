@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/ASSURINTYglobal_Magento_ESP",
+    "name": "openmage-module-fostering\/assurintyglobal_magento_esp",
     "type": "magento-module",
-    "license": "Open-Software-License-(OSL)",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "Seamlessly offer extended warranty for sale in customer cart. Displays as an optional item in the cart. ",
     "authors": [
